@@ -59,7 +59,7 @@ $.ajax({
        console.log(data);
     for(var i=0;i<data.items.length;i++){
        $('#profile1').append(`
-          <p> <img src="${data.items[i].urlToImage}"></p>
+          <p> <img src="${data.items[i].thumbnail}"></p>
            <br/>
            <a href="http://www.bbc.com/news/world" <h3 class="panel-title">Title:${data.items[i].title}</h3></a>
             
