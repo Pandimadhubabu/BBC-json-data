@@ -57,16 +57,16 @@ $.ajax({
 
     }).done(function(data){
        console.log(data);
-    for(var i=0;i<data.articles.length;i++){
+    for(var i=0;i<data.items.length;i++){
        $('#profile1').append(`
-          <p> <img src="${data.articles[i].urlToImage}"></p>
+          <p> <img src="${data.items[i].urlToImage}"></p>
            <br/>
-           <a href="http://www.bbc.com/news/world" <h3 class="panel-title">Title:${data.articles[i].title}</h3></a>
+           <a href="http://www.bbc.com/news/world" <h3 class="panel-title">Title:${data.items[i].title}</h3></a>
             
             <br/>
-            <h3 class="panel-title">Author:${data.articles[i].author}</h3>
+            <h3 class="panel-title">Author:${data.items[i].author}</h3>
              
-            <h3 class="panel-title">Description:${data.articles[i].description}</h3>
+            <h3 class="panel-title">Description:${data.items[i].description}</h3>
              <br/>
            `);
 
